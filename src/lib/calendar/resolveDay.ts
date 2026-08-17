@@ -9,6 +9,9 @@ export function resolveDay(
   year: SchoolYear,
   level: SchoolLevel,
   pattern: WeekPattern,
+  // Contractually an ISO YYYY-MM-DD string produced by toIsoDate. Validated by
+  // the caller (see validateSchoolYear.ts), not by this function -- resolveDay
+  // does plain ISO string comparison and does not itself check calendar validity.
   date: string,
 ): DayStatus {
   const term = year.terms[level]
