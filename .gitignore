@@ -42,5 +42,5 @@ yarn-error.log*
 next-env.d.ts
 
 # Raw acquired datasets (reacquire per docs/runbooks/institution-registry.md)
-data/*.raw.csv
-data/
+/data/*.raw.csv
+/data/
