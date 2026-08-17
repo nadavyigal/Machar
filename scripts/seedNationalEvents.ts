@@ -8,6 +8,24 @@ if (!url || !key) throw new Error('NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE
 
 const admin = createClient(url, key, { auth: { persistSession: false } })
 
+// Founder decision 2026-08-17: keep the two-level model. `gan` stays its own level;
+// יסודי, חטיבת ביניים and חטיבה עליונה are all `school`.
+//
+// KNOWN INFERENCE, not sourced. The circular's closures table states its own scope as
+// "בכל מוסדות החינוך הרשמי ... (להוציא חטיבות עליונות)" — senior high is EXPLICITLY
+// EXCLUDED from that table, which governs its closures under separate arrangements the
+// acquisition report did not transcribe. Mapping `school` to include 'high' therefore
+// asserts something the source does not say.
+//
+// It is kept anyway, deliberately: Israeli high schools do close for the major חגים in
+// practice, so applying these closures is approximately right, whereas dropping 'high'
+// would tell a high-school parent that school is open during Sukkot — a worse error in
+// the direction that actually costs someone a day.
+//
+// The residual risk is real but bounded: high-school closures here are INFERRED. Any
+// date where senior-high practice diverges from this table will be silently wrong. If
+// high-school households enter the beta, transcribe their circular rather than trusting
+// this mapping. See the human fidelity checklist in task-8-brief.md.
 const TYPES_FOR_LEVEL = {
   gan: ['gan'],
   school: ['elementary', 'middle', 'high'],
