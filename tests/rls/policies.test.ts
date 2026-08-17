@@ -28,15 +28,15 @@ async function makeHousehold(name: string): Promise<{ client: SupabaseClient; ho
   return { client, householdId: h.id, memberId: m!.id }
 }
 
+let a: Awaited<ReturnType<typeof makeHousehold>>
+let b: Awaited<ReturnType<typeof makeHousehold>>
+
+beforeAll(async () => {
+  a = await makeHousehold('alpha')
+  b = await makeHousehold('beta')
+})
+
 describe('household isolation', () => {
-  let a: Awaited<ReturnType<typeof makeHousehold>>
-  let b: Awaited<ReturnType<typeof makeHousehold>>
-
-  beforeAll(async () => {
-    a = await makeHousehold('alpha')
-    b = await makeHousehold('beta')
-  })
-
   it('a household cannot read another household row', async () => {
     const { data } = await a.client.from('households').select('id').eq('id', b.householdId)
     expect(data).toEqual([])
@@ -56,5 +56,46 @@ describe('household isolation', () => {
   it('a signed-in household can read its own members', async () => {
     const { data } = await a.client.from('members').select('id')
     expect(data?.length).toBe(1)
+  })
+})
+
+describe('event scope isolation', () => {
+  it('a household cannot read another household events', async () => {
+    await admin.from('events').insert({
+      scope: 'household', household_id: b.householdId,
+      title: 'סוד', kind: 'appointment', starts_on: '2026-09-10',
+    })
+    const { data } = await a.client.from('events').select('id').eq('scope', 'household')
+    expect(data).toEqual([])
+  })
+
+  it('every signed-in household reads national events', async () => {
+    await admin.from('events').insert({
+      scope: 'national', title: 'ראש השנה', kind: 'closure',
+      starts_on: '2026-09-12', external_key: 'test-rosh-hashana',
+    })
+    const { data } = await a.client.from('events').select('id').eq('scope', 'national')
+    expect(data?.length).toBeGreaterThan(0)
+  })
+
+  it('a household cannot read class events for an institution it is not enrolled in', async () => {
+    const { data: inst } = await admin.from('institutions')
+      .insert({ type: 'gan', name: 'גן בדיקה', semel: 'test-9999' }).select().single()
+    const { data: inserted, error: insertErr } = await admin.from('events').insert({
+      scope: 'class', institution_id: inst!.id, class_ref: 'א',
+      title: 'טיול', kind: 'announcement', starts_on: '2026-10-01',
+    }).select().single()
+    if (insertErr) throw insertErr
+
+    // Confirm the row actually exists (via service_role, which bypasses RLS)
+    // before asserting the anon client can't see it -- otherwise an empty
+    // result here would be indistinguishable from "the insert never happened".
+    const { data: confirmed, error: confirmErr } = await admin
+      .from('events').select('id').eq('id', inserted!.id).single()
+    if (confirmErr) throw confirmErr
+    expect(confirmed?.id).toBe(inserted!.id)
+
+    const { data } = await a.client.from('events').select('id').eq('scope', 'class')
+    expect(data).toEqual([])
   })
 })
