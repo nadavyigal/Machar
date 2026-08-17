@@ -10,7 +10,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "vitest run"
+    "test": "vitest run",
+    "seed:calendar": "tsx --env-file=.env.local scripts/seedNationalEvents.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.4",
