@@ -17,6 +17,16 @@ export type HouseholdDay = {
 
 export type HouseholdMonth = { month: string; days: HouseholdDay[] }
 
+const MONTH_PATTERN = /^\d{4}-(0[1-9]|1[0-2])$/
+
+function assertValidMonth(month: string): void {
+  if (!MONTH_PATTERN.test(month)) {
+    throw new Error(
+      `buildHouseholdMonth: invalid month "${month}" -- expected zero-padded YYYY-MM (e.g. "2026-09")`,
+    )
+  }
+}
+
 function daysInMonth(month: string): string[] {
   const [y, m] = month.split('-').map(Number) as [number, number]
   const count = new Date(Date.UTC(y, m, 0)).getUTCDate()
@@ -28,6 +38,7 @@ export function buildHouseholdMonth(
   children: ChildContext[],
   month: string,
 ): HouseholdMonth {
+  assertValidMonth(month)
   const days = daysInMonth(month).map((date) => {
     const perChild = children.map((c) => ({
       memberId: c.memberId,

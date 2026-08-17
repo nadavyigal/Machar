@@ -45,4 +45,48 @@ describe('buildHouseholdMonth', () => {
     expect(m.days[0]!.anyClosed).toBe(false)
     expect(m.days[0]!.allClosed).toBe(false)
   })
+
+  it('resolves a non-leap February (28 days)', () => {
+    const m = buildHouseholdMonth(Y, children, '2026-02')
+    expect(m.days).toHaveLength(28)
+    expect(m.days[0]!.date).toBe('2026-02-01')
+    expect(m.days[27]!.date).toBe('2026-02-28')
+  })
+
+  it('resolves a leap-year February (29 days)', () => {
+    const m = buildHouseholdMonth(Y, children, '2028-02')
+    expect(m.days).toHaveLength(29)
+    expect(m.days[0]!.date).toBe('2028-02-01')
+    expect(m.days[28]!.date).toBe('2028-02-29')
+  })
+
+  it('resolves December (31 days), confirming the Dec->Jan UTC rollback', () => {
+    const m = buildHouseholdMonth(Y, children, '2026-12')
+    expect(m.days).toHaveLength(31)
+    expect(m.days[0]!.date).toBe('2026-12-01')
+    expect(m.days[30]!.date).toBe('2026-12-31')
+  })
+
+  it('resolves January (31 days)', () => {
+    const m = buildHouseholdMonth(Y, children, '2027-01')
+    expect(m.days).toHaveLength(31)
+    expect(m.days[0]!.date).toBe('2027-01-01')
+    expect(m.days[30]!.date).toBe('2027-01-31')
+  })
+
+  it('throws on an unpadded month instead of silently corrupting comparisons', () => {
+    expect(() => buildHouseholdMonth(Y, children, '2026-9')).toThrow(/2026-9/)
+  })
+
+  it('throws on an empty month string instead of returning a blank calendar', () => {
+    expect(() => buildHouseholdMonth(Y, children, '')).toThrow()
+  })
+
+  it('throws on a garbage month string instead of returning a blank calendar', () => {
+    expect(() => buildHouseholdMonth(Y, children, 'garbage')).toThrow(/garbage/)
+  })
+
+  it('throws on an out-of-range month number', () => {
+    expect(() => buildHouseholdMonth(Y, children, '2026-13')).toThrow(/2026-13/)
+  })
 })
