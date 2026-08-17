@@ -60,6 +60,40 @@ describe('buildHouseholdMonth', () => {
     expect(m.days[28]!.date).toBe('2028-02-29')
   })
 
+  it('resolves an in-term February (2027-02, 28 days) using real weekday logic, not the out-of-year branch', () => {
+    // Unlike '2026-02' and '2028-02' below (both outside SYNTHETIC_YEAR's
+    // term, so every day resolves via the out-of-year branch), '2027-02' is
+    // inside the term for both levels, so this exercises real weekday
+    // resolution: Fridays and Saturdays closed for a five_day pattern,
+    // ordinary weekdays open, no closures/short-days fall in this month.
+    const m = buildHouseholdMonth(Y, children, '2027-02')
+    expect(m.days).toHaveLength(28)
+    expect(m.days[0]!.date).toBe('2027-02-01')
+    expect(m.days[27]!.date).toBe('2027-02-28')
+
+    const friday = m.days.find((d) => d.date === '2027-02-05')! // Friday
+    for (const p of friday.perChild) {
+      expect(p.status.open).toBe(false)
+      expect(p.status.shortDay).toBe(false)
+    }
+    expect(friday.allClosed).toBe(true)
+
+    const saturday = m.days.find((d) => d.date === '2027-02-06')! // Saturday
+    for (const p of saturday.perChild) {
+      expect(p.status.open).toBe(false)
+      expect(p.status.shortDay).toBe(false)
+    }
+    expect(saturday.allClosed).toBe(true)
+
+    const weekday = m.days.find((d) => d.date === '2027-02-01')! // Monday
+    for (const p of weekday.perChild) {
+      expect(p.status.open).toBe(true)
+      expect(p.status.shortDay).toBe(false)
+    }
+    expect(weekday.anyClosed).toBe(false)
+    expect(weekday.allClosed).toBe(false)
+  })
+
   it('resolves December (31 days), confirming the Dec->Jan UTC rollback', () => {
     const m = buildHouseholdMonth(Y, children, '2026-12')
     expect(m.days).toHaveLength(31)
