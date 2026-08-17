@@ -63,3 +63,83 @@ describe('createHousehold', () => {
     expect(members).toEqual([])
   })
 })
+
+// create_household is `security definer` and directly callable by any
+// authenticated client via `.rpc()` -- the Zod schema in createHousehold.ts
+// is a convenience guard, not the security boundary. These tests call the
+// RPC directly (bypassing createHousehold()/Zod) to exercise that boundary.
+// See migration 0009_household_payload_validation.sql.
+const FORBIDDEN_LEAK = /relation|column|members|enrollments|households/i
+
+describe('create_household RPC payload validation (security boundary)', () => {
+  it('rejects a wrong-shaped adult without leaking internal schema details', async () => {
+    const c = await signedInClient()
+    const { data, error } = await c.rpc('create_household', {
+      p_display_name: 'שגוי',
+      p_adults: [{ notFirstName: 'x' }],
+      p_children: [],
+    })
+    expect(data).toBeNull()
+    expect(error).toBeTruthy()
+    expect(error!.message).not.toMatch(FORBIDDEN_LEAK)
+
+    const { data: members } = await c.from('members').select('id')
+    expect(members).toEqual([])
+  })
+
+  it('rejects a child missing birthYear without leaking internal schema details', async () => {
+    const c = await signedInClient()
+    const { data, error } = await c.rpc('create_household', {
+      p_display_name: 'שגוי',
+      p_adults: [{ firstName: 'א' }],
+      p_children: [{ firstName: 'ב', institutionId, classRef: null }],
+    })
+    expect(data).toBeNull()
+    expect(error).toBeTruthy()
+    expect(error!.message).not.toMatch(FORBIDDEN_LEAK)
+
+    const { data: members } = await c.from('members').select('id')
+    expect(members).toEqual([])
+  })
+
+  it('rejects a child with a non-uuid institutionId without leaking internal schema details', async () => {
+    const c = await signedInClient()
+    const { data, error } = await c.rpc('create_household', {
+      p_display_name: 'שגוי',
+      p_adults: [{ firstName: 'א' }],
+      p_children: [{ firstName: 'ב', birthYear: 2019, institutionId: 'not-a-uuid', classRef: null }],
+    })
+    expect(data).toBeNull()
+    expect(error).toBeTruthy()
+    expect(error!.message).not.toMatch(FORBIDDEN_LEAK)
+
+    const { data: members } = await c.from('members').select('id')
+    expect(members).toEqual([])
+  })
+
+  it('rejects a child with a non-integer birthYear without leaking internal schema details', async () => {
+    const c = await signedInClient()
+    const { data, error } = await c.rpc('create_household', {
+      p_display_name: 'שגוי',
+      p_adults: [{ firstName: 'א' }],
+      p_children: [{ firstName: 'ב', birthYear: 2019.5, institutionId, classRef: null }],
+    })
+    expect(data).toBeNull()
+    expect(error).toBeTruthy()
+    expect(error!.message).not.toMatch(FORBIDDEN_LEAK)
+
+    const { data: members } = await c.from('members').select('id')
+    expect(members).toEqual([])
+  })
+
+  it('still succeeds for a well-shaped payload called directly through rpc', async () => {
+    const c = await signedInClient()
+    const { data, error } = await c.rpc('create_household', {
+      p_display_name: 'תקין',
+      p_adults: [{ firstName: 'א' }],
+      p_children: [{ firstName: 'ב', birthYear: 2019, institutionId, classRef: null }],
+    })
+    expect(error).toBeNull()
+    expect(data).toMatch(/^[0-9a-f-]{36}$/)
+  })
+})
