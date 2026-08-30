@@ -44,3 +44,9 @@ next-env.d.ts
 # Raw acquired datasets (reacquire per docs/runbooks/institution-registry.md)
 /data/*.raw.csv
 /data/
+
+# Xcode / SwiftPM
+ios/**/.build/
+ios/**/*.xcuserdatad/
+ios/**/xcuserdata/
+DerivedData/
