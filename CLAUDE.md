@@ -15,8 +15,9 @@ then [docs/plan/roadmap.md](docs/plan/roadmap.md) and
    both, with tests in both.
 3. **RLS is the security boundary.** Probe policies with a real second
    household; never assert them from reading SQL.
-4. **The Ministry data is not human-verified.** Until Task 8 step 4 is signed
-   off, this app does not go to anyone outside the founder's family.
+4. **The Ministry data was human-verified on 2026-08-30**
+   (`docs/fidelity-check-2026-2027.md`). Changing `src/lib/calendar/data/*.ts`
+   invalidates that sign-off: regenerate the checklist and re-check what changed.
 5. **Dates are ISO strings.** No `Date`/timezone handling inside calendar logic.
 6. Update `tasks/progress.md` after every commit.
 

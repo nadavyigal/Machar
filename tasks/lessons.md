@@ -1,5 +1,16 @@
 # Machar: Lessons
 
+## A committed SwiftPM `.build` directory breaks every git worktree
+
+`.gitignore` has listed `ios/**/.build/` since P2, but 2,426 files under
+`ios/MacharCore/.build/` were already tracked, and gitignore does not untrack
+what is already tracked. The precompiled module cache records the absolute path
+it was built at, so in a worktree `swift test` fails with "precompiled file ...
+was compiled with module cache path /Users/.../Machar/ios/... but the path is
+currently /Users/.../worktrees/.../ios/...". Add the ignore rule and
+`git rm -r --cached` in the same commit. To validate without touching the
+tracked files, use `swift test --scratch-path <tmp>`.
+
 ## The plan lived only in a PR description
 
 P1's task list existed nowhere in the repo. For 11 days the only record of what

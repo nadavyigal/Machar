@@ -5,6 +5,8 @@ struct HouseholdCalendarView: View {
     @EnvironmentObject private var household: HouseholdStore
     @StateObject private var model = CalendarViewModel()
 
+    @State private var showingSettings = false
+
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -22,6 +24,19 @@ struct HouseholdCalendarView: View {
                 .padding()
             }
             .navigationTitle("מחר")
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        showingSettings = true
+                    } label: {
+                        Image(systemName: "gearshape")
+                    }
+                    .accessibilityLabel("משק הבית")
+                }
+            }
+            .sheet(isPresented: $showingSettings) {
+                HouseholdSettingsView()
+            }
         }
     }
 }
@@ -103,6 +118,10 @@ struct MonthGrid: View {
     private let columns = Array(repeating: GridItem(.flexible(), spacing: 6), count: 7)
     private let weekdayNames = ["א", "ב", "ג", "ד", "ה", "ו", "ש"]
 
+    /// The day whose detail sheet is open. `HouseholdDay` is `Identifiable` on its
+    /// ISO date.
+    @State private var selected: HouseholdDay?
+
     var body: some View {
         LazyVGrid(columns: columns, spacing: 6) {
             ForEach(weekdayNames, id: \.self) { name in
@@ -112,8 +131,16 @@ struct MonthGrid: View {
             ForEach(0..<leadingBlanks, id: \.self) { _ in Color.clear.frame(height: 44) }
 
             ForEach(month.days) { day in
-                DayCell(day: day, isToday: day.date == today)
+                Button {
+                    selected = day
+                } label: {
+                    DayCell(day: day, isToday: day.date == today)
+                }
+                .buttonStyle(.plain)
             }
+        }
+        .sheet(item: $selected) { day in
+            DayDetailView(day: day, children: children)
         }
     }
 

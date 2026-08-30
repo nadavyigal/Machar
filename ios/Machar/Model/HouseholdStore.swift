@@ -27,6 +27,17 @@ final class HouseholdStore: ObservableObject {
         save()
     }
 
+    /// Replaces the child carrying the same `memberId`, keeping their position in
+    /// the household. A no-op when that child is no longer here: an edit sheet
+    /// left open over a child deleted behind it must not resurrect them.
+    func update(_ child: ChildContext) {
+        guard let index = storedChildren.firstIndex(where: { $0.memberId == child.memberId }) else {
+            return
+        }
+        storedChildren[index] = child
+        save()
+    }
+
     func remove(atOffsets offsets: IndexSet) {
         storedChildren.remove(atOffsets: offsets)
         save()

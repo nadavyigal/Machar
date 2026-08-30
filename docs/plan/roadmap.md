@@ -76,12 +76,12 @@ not.
 
 **Remaining in P2:**
 
-| # | Step | Outcome |
-|---|---|---|
-| 1 | **Ministry fidelity check** on the 2026-27 data (Task 8 step 4) | The dates are human-verified, not just internally consistent. This gates every other person using the app. |
-| 2 | Edit and delete children after onboarding | A parent can fix a typo without deleting the app. |
-| 3 | Day detail: tap a day, see each child and the reason | The month grid stops being a colour code. |
-| 4 | Install on the founder's iPhone | Real daily use starts, in the school year this data covers. |
+| # | Step | State | Outcome |
+|---|---|---|---|
+| 1 | **Ministry fidelity check** on the 2026-27 data (Task 8 step 4) | ✅ signed off 2026-08-30 | All 24 rows of `docs/fidelity-check-2026-2027.md` reviewed and accepted by the founder. Two caveats stay live and are recorded there: middle/high school is not modelled separately, and יום הזיכרון is school-only in gan. |
+| 2 | Edit and delete children after onboarding | ✅ done | A parent can fix a typo without deleting the app. |
+| 3 | Day detail: tap a day, see each child and the reason | ✅ done | The month grid stops being a colour code. |
+| 4 | Install on the founder's iPhone | ⬅ open, human step | Real daily use starts, in the school year this data covers. |
 
 **Outcome:** the founder's family uses it daily from the first week of the school
 year. That is the only P2 success measure. Not App Store, not users.
@@ -122,6 +122,12 @@ Not scoped. Do not scope it before P4 has evidence.
 
 ## Known debt
 
+- `ios/MacharCore/.build/` is committed (2,426 files) even though `.gitignore`
+  lists `ios/**/.build/`; the ignore rule was added after the files were tracked.
+  The committed SwiftPM module cache stores absolute paths, so `swift test` fails
+  in any git worktree until it is untracked with
+  `git rm -r --cached ios/MacharCore/.build`. Work around it meanwhile with
+  `swift test --scratch-path <tmp>`.
 - Migrations `0005` and `0008` do not exist; the numbering was never reconciled.
 - `[analytics]` is disabled in the committed `supabase/config.toml`, which
   changes local dev for anyone who clones this.
