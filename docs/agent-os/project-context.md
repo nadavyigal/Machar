@@ -38,8 +38,11 @@ Swift dependencies.
 3. **RLS is the security boundary.** Never move an isolation rule into
    application code, and never assert a policy works by reading the SQL - probe
    it with a real second household.
-4. **The Ministry data is not verified.** Until the step-4 fidelity check is
-   done, no one outside the founder's family uses this app.
+4. **The Ministry data was signed off on 2026-08-30** (`docs/fidelity-check-2026-2027.md`).
+   The gate is open. Two caveats stay live and are recorded in that file: middle
+   and high school are not modelled separately, and יום הזיכרון is school-only in
+   gan. Any change to `src/lib/calendar/data/*.ts` re-opens the gate - regenerate
+   the checklist and re-check what changed.
 5. **Dates are ISO `YYYY-MM-DD` strings end to end.** Do not introduce
    `Date`/timezone handling into calendar logic on either side.
 

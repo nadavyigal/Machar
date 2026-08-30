@@ -2,10 +2,10 @@
 
 - **Status:** active
 - **Current Phase:** P2 - the app a parent can open
-- **Active Story:** MCH-01 stories 1-3 done; stories 1 (ticking) and 4 are the founder's
-- **Last Completed Story:** MCH-01 story 3 - day detail sheet
-- **Next Recommended Story:** tick `docs/fidelity-check-2026-2027.md` against הודעה מס' 0363 (20 min, gates every non-founder user), then install on the iPhone
-- **Blockers:** none technical. The fidelity check is a human reading task and gates anyone beyond the founder's family using the app. Not one box is ticked.
+- **Active Story:** MCH-01 story 4 - install on the founder's iPhone
+- **Last Completed Story:** Ministry fidelity check signed off 2026-08-30 - the gate is open
+- **Next Recommended Story:** install on the founder's iPhone (needs DEVELOPMENT_TEAM set in Xcode), then two weeks of real use before any P3 work
+- **Blockers:** device install is blocked on signing - `DEVELOPMENT_TEAM` is unset in `ios/Machar.xcodeproj` and the paired iPhone is offline.
 - **Last Validation:** 2026-08-30 - `swift test` 18/18 (needs `--scratch-path`, see lessons); `xcodebuild` BUILD SUCCEEDED; `pnpm lint` clean; `pnpm vitest run src/lib/calendar` 44/44. `pnpm test` overall FAILS: 3 Supabase-dependent files cannot construct a client with no local Supabase running (50 pure tests pass). Simulator: rename, delete, add, level change all verified and persisted; 2026-09-14 shows the school child on צום גדליה while the gan child is on an ordinary day.
 - **Last Updated:** 2026-08-30
 
@@ -37,3 +37,4 @@ Supabase sync is P4.
 ### 2026-08-17
 P1 built: schema, RLS, events, registry parser, calendar engine, household
 creation, month view model, 2026-27 calendar transcription.
+Last Updated: 2026-08-30
