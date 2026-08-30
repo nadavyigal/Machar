@@ -50,6 +50,23 @@ input beyond who the children are.
 
 **Outcome:** the logic is correct and provably isolated. Nothing is visible.
 
+**The P1 plan and the product spec are not in this repo.** They are
+`docs/superpowers/plans/2026-08-17-machar-p1-cold-start-spine.md` and
+`docs/superpowers/specs/2026-08-17-family-os-israel-design.md` in the Builder OS
+vault, in PR #66, open since 2026-08-17. Merge that PR; until it lands, the
+thirteen-task plan exists only on a branch.
+
+**P1 tasks never built:** 5 (registry acquisition and seed script), 6
+(institution search), 11 and 12 (web onboarding and its Playwright E2E), 13
+(unverified-institution fallback, which owns migration `0008` and explains the
+numbering gap).
+
+Tasks 11 and 12 are **superseded** by the native app: onboarding is SwiftUI now,
+not a Next.js route. Tasks 5, 6 and 13 are still real, and they are what
+institution-level accuracy depends on. They move to P4, because the national
+calendar alone is enough for a single family and institution-scope events are
+not.
+
 ### P2: The app a parent can open ⬅ in progress (PR #2)
 
 - `ios/MacharCore`: the calendar engine ported to Swift, 18 tests mirroring the
