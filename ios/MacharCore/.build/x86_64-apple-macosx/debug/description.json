@@ -1,0 +1,785 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.xctest/Contents/MacOS/MacharCorePackageTests",
+      "packagePath" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore",
+      "productName" : "MacharCorePackageTests"
+    }
+  ],
+  "copyCommands" : {
+    "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore_MacharCore.bundle/Info.plist" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/Info.plist"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore_MacharCore.bundle/Info.plist"
+        }
+      ]
+    },
+    "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore_MacharCore.bundle/school-year-2026-2027.json" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Sources/MacharCore/Resources/school-year-2026-2027.json"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore_MacharCore.bundle/school-year-2026-2027.json"
+        }
+      ]
+    }
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.MacharCore-x86_64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/sources",
+      "importPath" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Sources/MacharCore/CivilDate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Sources/MacharCore/HouseholdMonth.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Sources/MacharCore/Models.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Sources/MacharCore/ResolveDay.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Sources/MacharCore/SchoolYearStore.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/DerivedSources/resource_bundle_accessor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<MacharCore-x86_64-apple-macosx-debug.module-resources>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "MacharCore",
+      "moduleOutputPath" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/Modules/MacharCore.swiftmodule",
+      "objects" : [
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/CivilDate.swift.o",
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/HouseholdMonth.swift.o",
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/Models.swift.o",
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/ResolveDay.swift.o",
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/SchoolYearStore.swift.o",
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/resource_bundle_accessor.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j16",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
+        "-module-cache-path",
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/include/MacharCore-Swift.h",
+        "-swift-version",
+        "6",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "macharcore"
+      ],
+      "outputFileMapPath" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/CivilDate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/HouseholdMonth.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/Models.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/ResolveDay.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/SchoolYearStore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/Modules/MacharCore.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Sources/MacharCore/CivilDate.swift",
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Sources/MacharCore/HouseholdMonth.swift",
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Sources/MacharCore/Models.swift",
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Sources/MacharCore/ResolveDay.swift",
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Sources/MacharCore/SchoolYearStore.swift",
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/DerivedSources/resource_bundle_accessor.swift"
+      ],
+      "tempsPath" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.MacharCorePackageTests-x86_64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.build/sources",
+      "importPath" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/Modules/MacharCoreTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "MacharCorePackageTests",
+      "moduleOutputPath" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/Modules/MacharCorePackageTests.swiftmodule",
+      "objects" : [
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j16",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.build/include/MacharCorePackageTests-Swift.h",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "macharcore"
+      ],
+      "outputFileMapPath" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/Modules/MacharCorePackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.MacharCoreTests-x86_64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/sources",
+      "importPath" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Tests/MacharCoreTests/CivilDateTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Tests/MacharCoreTests/HouseholdMonthTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Tests/MacharCoreTests/ResolveDayTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Tests/MacharCoreTests/SchoolYearStoreTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/Modules/MacharCore.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "MacharCoreTests",
+      "moduleOutputPath" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/Modules/MacharCoreTests.swiftmodule",
+      "objects" : [
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/CivilDateTests.swift.o",
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/HouseholdMonthTests.swift.o",
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/ResolveDayTests.swift.o",
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/SchoolYearStoreTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j16",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "6",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "macharcore"
+      ],
+      "outputFileMapPath" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/CivilDateTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/HouseholdMonthTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/ResolveDayTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/SchoolYearStoreTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/Modules/MacharCoreTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Tests/MacharCoreTests/CivilDateTests.swift",
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Tests/MacharCoreTests/HouseholdMonthTests.swift",
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Tests/MacharCoreTests/ResolveDayTests.swift",
+        "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Tests/MacharCoreTests/SchoolYearStoreTests.swift"
+      ],
+      "tempsPath" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "MacharCore" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "MacharCore",
+      "-package-name",
+      "macharcore",
+      "-c",
+      "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Sources/MacharCore/CivilDate.swift",
+      "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Sources/MacharCore/HouseholdMonth.swift",
+      "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Sources/MacharCore/Models.swift",
+      "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Sources/MacharCore/ResolveDay.swift",
+      "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Sources/MacharCore/SchoolYearStore.swift",
+      "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/DerivedSources/resource_bundle_accessor.swift",
+      "-I",
+      "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/Modules",
+      "-target",
+      "x86_64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j16",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
+      "-module-cache-path",
+      "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/include/MacharCore-Swift.h",
+      "-swift-version",
+      "6",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "macharcore",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "MacharCorePackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "MacharCorePackageTests",
+      "-package-name",
+      "macharcore",
+      "-c",
+      "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.derived/runner.swift",
+      "-I",
+      "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/Modules",
+      "-target",
+      "x86_64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j16",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.build/include/MacharCorePackageTests-Swift.h",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "macharcore",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "MacharCoreTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "MacharCoreTests",
+      "-package-name",
+      "macharcore",
+      "-c",
+      "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Tests/MacharCoreTests/CivilDateTests.swift",
+      "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Tests/MacharCoreTests/HouseholdMonthTests.swift",
+      "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Tests/MacharCoreTests/ResolveDayTests.swift",
+      "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Tests/MacharCoreTests/SchoolYearStoreTests.swift",
+      "-I",
+      "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/Modules",
+      "-target",
+      "x86_64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j16",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "6",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "macharcore",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "MacharCore" : [
+
+    ],
+    "MacharCorePackageTests" : [
+      "MacharCoreTests",
+      "MacharCore"
+    ],
+    "MacharCoreTests" : [
+      "MacharCore"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Sources/MacharCore/CivilDate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Sources/MacharCore/HouseholdMonth.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Sources/MacharCore/Models.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Sources/MacharCore/ResolveDay.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Sources/MacharCore/SchoolYearStore.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/DerivedSources/resource_bundle_accessor.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/sources"
+    },
+    "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.build/sources"
+    },
+    "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/CivilDate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/HouseholdMonth.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/Models.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/ResolveDay.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/SchoolYearStore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCore.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/CivilDateTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/HouseholdMonthTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/ResolveDayTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/SchoolYearStoreTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Tests/MacharCoreTests/CivilDateTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Tests/MacharCoreTests/HouseholdMonthTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Tests/MacharCoreTests/ResolveDayTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Tests/MacharCoreTests/SchoolYearStoreTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/sources"
+    },
+    "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}
