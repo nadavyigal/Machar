@@ -1,4 +1,4 @@
-# Machar — Project Context
+# Machar: Project Context
 
 Last updated: 2026-08-30
 
@@ -36,7 +36,7 @@ Swift dependencies.
 2. **The Swift and TypeScript engines are one contract.** A behaviour change
    lands in both, with the matching test in both.
 3. **RLS is the security boundary.** Never move an isolation rule into
-   application code, and never assert a policy works by reading the SQL — probe
+   application code, and never assert a policy works by reading the SQL - probe
    it with a real second household.
 4. **The Ministry data is not verified.** Until the step-4 fidelity check is
    done, no one outside the founder's family uses this app.

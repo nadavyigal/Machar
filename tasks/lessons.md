@@ -1,4 +1,4 @@
-# Machar — Lessons
+# Machar: Lessons
 
 ## The plan lived only in a PR description
 

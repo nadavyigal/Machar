@@ -1,4 +1,4 @@
-# Machar — Roadmap
+# Machar: Roadmap
 
 Last updated: 2026-08-30
 
@@ -19,7 +19,7 @@ platform. Those are what this becomes if scope is not defended.
 ## Who it is for
 
 Israeli households with children in גן through יסודי, where at least one parent
-works. Version one is for the founder's own family — a real user with real
+works. Version one is for the founder's own family - a real user with real
 consequences, in the year the calendar actually applies.
 
 ## The bet
@@ -32,7 +32,7 @@ each, and no published source shows them together.
 
 ## Phases
 
-### P1 — Cold-start spine ✅ merged 2026-08-30 (PR #1)
+### P1: Cold-start spine ✅ merged 2026-08-30 (PR #1)
 
 A household can exist and a correct calendar can be computed with zero user
 input beyond who the children are.
@@ -50,7 +50,7 @@ input beyond who the children are.
 
 **Outcome:** the logic is correct and provably isolated. Nothing is visible.
 
-### P2 — The app a parent can open ⬅ in progress (PR #2)
+### P2: The app a parent can open ⬅ in progress (PR #2)
 
 - `ios/MacharCore`: the calendar engine ported to Swift, 18 tests mirroring the
   TypeScript cases.
@@ -69,7 +69,7 @@ input beyond who the children are.
 **Outcome:** the founder's family uses it daily from the first week of the school
 year. That is the only P2 success measure. Not App Store, not users.
 
-### P3 — Worth keeping on the phone
+### P3: Worth keeping on the phone
 
 Only build these after two weeks of real use say which is missing.
 
@@ -79,7 +79,7 @@ Only build these after two weeks of real use say which is missing.
 
 **Outcome:** the founder stops checking the app because the app tells him first.
 
-### P4 — More than one household
+### P4: More than one household
 
 This is where the Supabase work from P1 finally gets used.
 
@@ -90,7 +90,7 @@ This is where the Supabase work from P1 finally gets used.
 **Outcome:** two parents in one household see the same calendar. Decides whether
 Machar is a personal tool or a product.
 
-### P5 — Distribution
+### P5: Distribution
 
 Not scoped. Do not scope it before P4 has evidence.
 

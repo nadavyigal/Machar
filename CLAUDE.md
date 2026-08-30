@@ -1,4 +1,4 @@
-# CLAUDE.md — Machar
+# CLAUDE.md: Machar
 
 Hebrew iOS app: what does my family need tomorrow, from the Israeli school
 calendar, resolved per child.
