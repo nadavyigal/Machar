@@ -1,0 +1,33 @@
+{
+  "": {
+    "swift-dependencies": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/primary.swiftdeps"
+  },
+  "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Tests/MacharCoreTests/CivilDateTests.swift": {
+    "dependencies": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/CivilDateTests.d",
+    "object": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/CivilDateTests.swift.o",
+    "swiftmodule": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/CivilDateTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/CivilDateTests.swiftdeps",
+    "diagnostics": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/CivilDateTests.dia"
+  },
+  "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Tests/MacharCoreTests/HouseholdMonthTests.swift": {
+    "dependencies": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/HouseholdMonthTests.d",
+    "object": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/HouseholdMonthTests.swift.o",
+    "swiftmodule": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/HouseholdMonthTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/HouseholdMonthTests.swiftdeps",
+    "diagnostics": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/HouseholdMonthTests.dia"
+  },
+  "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Tests/MacharCoreTests/ResolveDayTests.swift": {
+    "dependencies": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/ResolveDayTests.d",
+    "object": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/ResolveDayTests.swift.o",
+    "swiftmodule": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/ResolveDayTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/ResolveDayTests.swiftdeps",
+    "diagnostics": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/ResolveDayTests.dia"
+  },
+  "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/Tests/MacharCoreTests/SchoolYearStoreTests.swift": {
+    "dependencies": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/SchoolYearStoreTests.d",
+    "object": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/SchoolYearStoreTests.swift.o",
+    "swiftmodule": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/SchoolYearStoreTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/SchoolYearStoreTests.swiftdeps",
+    "diagnostics": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCoreTests.build/SchoolYearStoreTests.dia"
+  }
+}

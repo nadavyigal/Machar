@@ -1,0 +1,139 @@
+{
+  "label": "תשפ\"ז",
+  "terms": {
+    "gan": {
+      "start": "2026-09-01",
+      "end": "2027-06-30"
+    },
+    "school": {
+      "start": "2026-09-01",
+      "end": "2027-06-30"
+    }
+  },
+  "closures": [
+    {
+      "key": "rosh_hashana",
+      "name": "ראש השנה",
+      "from": "2026-09-11",
+      "to": "2026-09-13",
+      "levels": [
+        "gan",
+        "school"
+      ]
+    },
+    {
+      "key": "yom_kippur",
+      "name": "יום כיפור",
+      "from": "2026-09-20",
+      "to": "2026-09-21",
+      "levels": [
+        "gan",
+        "school"
+      ]
+    },
+    {
+      "key": "kippur_sukkot_bridge",
+      "name": "ימי חופשה בין יום הכיפורים לסוכות",
+      "from": "2026-09-22",
+      "to": "2026-09-24",
+      "levels": [
+        "gan",
+        "school"
+      ]
+    },
+    {
+      "key": "sukkot",
+      "name": "סוכות",
+      "from": "2026-09-25",
+      "to": "2026-10-03",
+      "levels": [
+        "gan",
+        "school"
+      ]
+    },
+    {
+      "key": "hanukkah",
+      "name": "חנוכה",
+      "from": "2026-12-06",
+      "to": "2026-12-12",
+      "levels": [
+        "gan",
+        "school"
+      ]
+    },
+    {
+      "key": "purim",
+      "name": "פורים",
+      "from": "2027-03-23",
+      "to": "2027-03-24",
+      "levels": [
+        "gan",
+        "school"
+      ]
+    },
+    {
+      "key": "pesach",
+      "name": "פסח",
+      "from": "2027-04-13",
+      "to": "2027-04-28",
+      "levels": [
+        "gan",
+        "school"
+      ]
+    },
+    {
+      "key": "yom_haatzmaut",
+      "name": "יום העצמאות",
+      "from": "2027-05-12",
+      "to": "2027-05-12",
+      "levels": [
+        "gan",
+        "school"
+      ]
+    },
+    {
+      "key": "shavuot",
+      "name": "שבועות",
+      "from": "2027-06-10",
+      "to": "2027-06-11",
+      "levels": [
+        "gan",
+        "school"
+      ]
+    }
+  ],
+  "shortDays": [
+    {
+      "key": "tzom_gedaliah",
+      "name": "צום גדליה",
+      "date": "2026-09-14",
+      "levels": [
+        "school"
+      ]
+    },
+    {
+      "key": "asara_btevet",
+      "name": "עשרה בטבת",
+      "date": "2026-12-20",
+      "levels": [
+        "school"
+      ]
+    },
+    {
+      "key": "taanit_esther",
+      "name": "תענית אסתר",
+      "date": "2027-03-22",
+      "levels": [
+        "school"
+      ]
+    },
+    {
+      "key": "yom_hazikaron",
+      "name": "יום הזיכרון לחללי צה\"ל",
+      "date": "2027-05-11",
+      "levels": [
+        "school"
+      ]
+    }
+  ]
+}

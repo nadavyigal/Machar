@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.build/primary.swiftdeps"
+  },
+  "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.derived/runner.swift": {
+    "dependencies": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.build/runner.d",
+    "object": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/nadavyigal/Documents/Projects /Machar/ios/MacharCore/.build/x86_64-apple-macosx/debug/MacharCorePackageTests.build/runner.dia"
+  }
+}
